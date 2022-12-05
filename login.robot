@@ -21,10 +21,12 @@ Login104
     Click Element    //a[@id='name_link']
     Wait Until Element Is Visible    //a[@onclick="gcn('_sso2');"]
     Click Element    //a[@onclick="gcn('_sso2');"]
+    Go To    https://pda.104.com.tw/
     Wait Until Element Is Visible    //div[@class='h2 mb-3']
     Element Text Should Be    //div[@class='h2 mb-3']    ${userName}
     Wait Until Element Is Visible    //a[@onclick="gcn('_logout');"]
     Click Element    //a[@onclick="gcn('_logout');"]
+    Close Browser
 
 
 *** Keywords ***
